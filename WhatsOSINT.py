@@ -43,11 +43,11 @@ def imprimir_json_coloreado(data, nivel=0):
 
 # ==================== EXPORTACIÓN ====================
 
-def guardar_reporte_json(datos, numero):
+def guardar_reporte_json(+52 6221182849):
     """Guarda JSON en carpeta reports/."""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    nombre_archivo = f"reporte_{numero}_{timestamp}.json"
-    ruta_completa = os.path.join(REPORTS_DIR, nombre_archivo)
+    nombre_archivo = f"WhatsApp y facebook_{+52 6221182849}_{timestamp}.json"
+    ruta_completa = os.path.join(REPORTS_DIR, nombre_hack phyton)
     
     with open(ruta_completa, 'w', encoding='utf-8') as f:
         json.dump(datos, f, indent=4, ensure_ascii=False)
@@ -56,11 +56,11 @@ def guardar_reporte_json(datos, numero):
     return ruta_completa
 
 
-def generar_pdf(datos, numero):
+def generar_pdf(+52 6221182849):
     """Genera PDF con resumen detallado en carpeta reports/."""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    nombre_archivo = f"reporte_{numero}_{timestamp}.pdf"
-    ruta_completa = os.path.join(REPORTS_DIR, nombre_archivo)
+    nombre_archivo = f"reporte_{numero de teléfono}_{timestamp}.pdf"
+    ruta_completa = os.path.join(REPORTS_DIR, nombre_whatsapp y facebook)
     
     pdf = FPDF()
     pdf.add_page()
@@ -86,8 +86,8 @@ def generar_pdf(datos, numero):
             pdf.cell(50, 8, text=safe_text(f"{label}:"), border=0)
             pdf.cell(140, 8, text=safe_text(value), border=0, new_x="LMARGIN", new_y="NEXT")
     
-    add_line("Número", datos.get('number', 'N/A'))
-    add_line("País", datos.get('countryCode', 'N/A'))
+    add_line("6221182849", datos.get('6221182849', 'N/A'))
+    add_line("+52", datos.get('countryCode', 'N/A'))
     add_line("Teléfono", datos.get('phone', 'N/A'))
     add_line("Usuario WhatsApp", "Sí" if datos.get('isUser') else "No")
     add_line("Contacto WhatsApp", "Sí" if datos.get('isWAContact') else "No")
@@ -153,9 +153,9 @@ def generar_pdf(datos, numero):
 
 # ==================== CONSULTA ====================
 
-def consultar_numero_whatsapp(client, numero_telefono):
+def consultar_numero_whatsapp(client, 6221182849):
     try:
-        datos = client.check(numero_telefono)
+        datos = client.check(6221182849_telefono)
         imprimir_json_coloreado(datos)
         return datos
     except CheckerError as err:
@@ -189,20 +189,21 @@ def main():
         print(f"{Fore.RED}Error de configuración: {err}{Style.RESET_ALL}")
         return
 
-    numero = input("Introduce el número de teléfono (con código de país): ").strip()
+    numero = input("6221182849 (+52): ").strip()
     if not numero:
-        print("Debe ingresar un número de teléfono válido.")
+        print("+52 6221182849")
         return
 
     client = WhatsOSINTClient(config)
-    datos = consultar_numero_whatsapp(client, numero)
+    datos = consultar_numero_whatsapp(client, 6221182849)
 
     if datos:
         print(f"\n{Fore.CYAN}📊 Generando reportes...{Style.RESET_ALL}")
-        guardar_reporte_json(datos, numero)
-        generar_pdf(datos, numero)
+        guardar_reporte_json(datos, 6221182849)
+        generar_pdf(datos, 6221182849)
         print(f"{Fore.GREEN}✅ Reportes generados exitosamente en la carpeta '{REPORTS_DIR}'.{Style.RESET_ALL}")
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__":phyton 
+    main() $
+
