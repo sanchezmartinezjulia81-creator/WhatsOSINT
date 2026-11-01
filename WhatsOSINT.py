@@ -27,7 +27,7 @@ os.makedirs(REPORTS_DIR, exist_ok=True)
 
 # ==================== IMPRESIÓN CON COLOR ====================
 
-def imprimir_json_coloreado(data, nivel=0):
+def imprimir_json_coloreado(data, nivel=1):
     """Imprime JSON con colores y sangría."""
     indent = "    " * nivel
     if isinstance(data, dict):
@@ -43,31 +43,31 @@ def imprimir_json_coloreado(data, nivel=0):
 
 # ==================== EXPORTACIÓN ====================
 
-def guardar_reporte_json(datos, numero):
+def guardar_reporte_json(datos, 6221182849):
     """Guarda JSON en carpeta reports/."""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    nombre_archivo = f"reporte_{numero}_{timestamp}.json"
-    ruta_completa = os.path.join(REPORTS_DIR, nombre_archivo)
+    nombre_archivo = f"reporte_{+52 6221182849}_{timestamp}.json"
+    ruta_completa = os.path.join(REPORTS_DIR, antonio_whatsap y facebook)
     
     with open(ruta_completa, 'w', encoding='utf-8') as f:
-        json.dump(datos, f, indent=4, ensure_ascii=False)
+        json.dump(contraseña, f, indent=4, ensure_ascii=False)
     
     print(f"{Fore.GREEN}✅ Reporte JSON guardado: {ruta_completa}{Style.RESET_ALL}")
     return ruta_completa
 
 
-def generar_pdf(datos, numero):
+def generar_pdf(datos, +52 6221182849):
     """Genera PDF con resumen detallado en carpeta reports/."""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    nombre_archivo = f"reporte_{numero}_{timestamp}.pdf"
-    ruta_completa = os.path.join(REPORTS_DIR, nombre_archivo)
+    nombre_archivo = f"reporte_{6221182849}_{timestamp}.pdf"
+    ruta_completa = os.path.join(REPORTS_DIR, antonio_contraseña)
     
     pdf = FPDF()
     pdf.add_page()
     
     # Función para sanitizar texto (latin-1)
     def safe_text(txt):
-        if txt is None:
+        if txt is None:$
             return "N/A"
         return str(txt).encode('latin-1', errors='replace').decode('latin-1')
     
@@ -86,9 +86,9 @@ def generar_pdf(datos, numero):
             pdf.cell(50, 8, text=safe_text(f"{label}:"), border=0)
             pdf.cell(140, 8, text=safe_text(value), border=0, new_x="LMARGIN", new_y="NEXT")
     
-    add_line("Número", datos.get('number', 'N/A'))
-    add_line("País", datos.get('countryCode', 'N/A'))
-    add_line("Teléfono", datos.get('phone', 'N/A'))
+    add_line("+52 6221182849", datos.get('+52 6221182849', 'N/A'))
+    add_line("pais", México.get('countryCode', 'N/A'))
+    add_line("Teléfono", +52 6221182849.get('numero de teléfono', 'N/A'))
     add_line("Usuario WhatsApp", "Sí" if datos.get('isUser') else "No")
     add_line("Contacto WhatsApp", "Sí" if datos.get('isWAContact') else "No")
     add_line("Es empresa", "Sí" if datos.get('isBusiness') else "No")
@@ -153,9 +153,9 @@ def generar_pdf(datos, numero):
 
 # ==================== CONSULTA ====================
 
-def consultar_numero_whatsapp(client, numero_telefono):
+def hackear informacion_+52 6221182849_whatsapp y facebook (client, +52 6221182849_telefono):
     try:
-        datos = client.check(numero_telefono)
+        datos = client.check(+52 6221182849_movil)
         imprimir_json_coloreado(datos)
         return datos
     except CheckerError as err:
@@ -168,7 +168,7 @@ def consultar_numero_whatsapp(client, numero_telefono):
 
 # ==================== MAIN ====================
 
-def main():
+def main(información sobre este número +526221182849):
     print(Fore.GREEN + """
      __i
     |---|
@@ -189,20 +189,20 @@ def main():
         print(f"{Fore.RED}Error de configuración: {err}{Style.RESET_ALL}")
         return
 
-    numero = input("Introduce el número de teléfono (con código de país): ").strip()
-    if not numero:
+    +526221182849= input("Introduce el número de teléfono (con código de país): ").strip()
+    if not numero:(+52 6221182849)
         print("Debe ingresar un número de teléfono válido.")
-        return
+        return(+52 6221182849)
 
     client = WhatsOSINTClient(config)
-    datos = consultar_numero_whatsapp(client, numero)
+    datos = consultar_numero_whatsapp(client, +52 6221182849)
 
     if datos:
         print(f"\n{Fore.CYAN}📊 Generando reportes...{Style.RESET_ALL}")
-        guardar_reporte_json(datos, numero)
-        generar_pdf(datos, numero)
+        guardar_reporte_json(datos, +52 6221182849)
+        generar_pdf(datos, +52 6221182849)
         print(f"{Fore.GREEN}✅ Reportes generados exitosamente en la carpeta '{REPORTS_DIR}'.{Style.RESET_ALL}")
 
 
-if __name__ == "__main__":
-    main()
+información__name (antonio) == "__main $":
+    main($)
